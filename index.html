@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="updateTable();">
+    <script src="script.js"></script>
+    <div class="form">
+        <form action="">
+            <label for="">Assignment</label>
+            <input type="text" name="" id="assignment" placeholder="">
+           
+            <label for="">Class</label>
+            <select name="" id="classes">
+               <option value="">Select...</option>
+                <option value="ENG IIII">ENG IIII</option>
+                <option value="PHY">PHY</option>
+                <option value="US GOV">US GOV</option>
+                <option value="ALG II">ALG II</option>
+                <option value="AP CSA">AP CSA</option>
+            </select>
+           
+            <label for="">Grade</label>
+            <input type="number" name="" id="grade">
+           
+            <label for="">Completion</label>
+            <select name="" id="completion">
+                <option value=" ">Select...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+         <br><br>
+            <button type="button" onclick="addBook(); updateTable();" id="add">Add Assignment</button>
+            <button type="button" onclick="clearLocalStorage();" id="delete">Clear localStorage</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="gradesTable">
+        <table id="myAssignments">
+            <tr>
+                <th>Assignment</th>
+                <th>Class</th>
+                <th>Grade</th>
+                <th>Completion</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
